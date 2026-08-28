@@ -1,0 +1,183 @@
+[
+  {
+    "case_description": "1. Restaurant receipt with subtotal, state tax, local meal tax, and an added 18% tip (Tip included in line items for exact arithmetic balance)",
+    "receipt": {
+      "vendor_name": "Bistro Deluxe Steakhouse",
+      "transaction_date": "2026-08-18",
+      "currency": "USD",
+      "subtotal_net": 94.40,
+      "line_items": [
+        {
+          "description": "Ribeye Steak 12oz",
+          "quantity": 2.0,
+          "unit_price": 30.00,
+          "total_price": 60.00
+        },
+        {
+          "description": "Craft IPA Draft",
+          "quantity": 2.0,
+          "unit_price": 10.00,
+          "total_price": 20.00
+        },
+        {
+          "description": "18% Gratuity / Tip",
+          "quantity": 1.0,
+          "unit_price": 14.40,
+          "total_price": 14.40
+        }
+      ],
+      "tax_breakdown": [
+        {
+          "tax_name": "State Sales Tax 6%",
+          "tax_rate_percent": 6.0,
+          "tax_amount": 4.80
+        },
+        {
+          "tax_name": "Local Meals Tax 2%",
+          "tax_rate_percent": 2.0,
+          "tax_amount": 1.60
+        }
+      ],
+      "total_tax_amount": 6.40,
+      "total_gross_amount": 100.80,
+      "category": "Meals & Entertainment",
+      "payment_method": "Visa 4321"
+    }
+  },
+  {
+    "case_description": "2. Foreign SaaS invoice with zero VAT (reverse charge mechanism applied)",
+    "receipt": {
+      "vendor_name": "CloudScale Global B.V.",
+      "transaction_date": "2026-08-01",
+      "currency": "EUR",
+      "subtotal_net": 150.00,
+      "line_items": [
+        {
+          "description": "Enterprise Cloud Node Infrastructure - Monthly",
+          "quantity": 1.0,
+          "unit_price": 150.00,
+          "total_price": 150.00
+        }
+      ],
+      "tax_breakdown": [
+        {
+          "tax_name": "Reverse Charge VAT (EU Art 194)",
+          "tax_rate_percent": 0.0,
+          "tax_amount": 0.00
+        }
+      ],
+      "total_tax_amount": 0.00,
+      "total_gross_amount": 150.00,
+      "category": "Software & Subscriptions",
+      "payment_method": "Corporate Wire Transfer"
+    }
+  },
+  {
+    "case_description": "3. Hardware store receipt containing multiple line items, a store discount coupon, and sales tax",
+    "receipt": {
+      "vendor_name": "ProBuild Supply Depot",
+      "transaction_date": "2026-08-12",
+      "currency": "USD",
+      "subtotal_net": 120.00,
+      "line_items": [
+        {
+          "description": "20V Cordless Drill Kit",
+          "quantity": 1.0,
+          "unit_price": 120.00,
+          "total_price": 120.00
+        },
+        {
+          "description": "Heavy Duty Mounting Tape",
+          "quantity": 2.0,
+          "unit_price": 10.00,
+          "total_price": 20.00
+        },
+        {
+          "description": "Store Rewards Discount Coupon",
+          "quantity": 1.0,
+          "unit_price": -20.00,
+          "total_price": -20.00
+        }
+      ],
+      "tax_breakdown": [
+        {
+          "tax_name": "State Sales Tax 8%",
+          "tax_rate_percent": 8.0,
+          "tax_amount": 9.60
+        }
+      ],
+      "total_tax_amount": 9.60,
+      "total_gross_amount": 129.60,
+      "category": "Office Supplies & Hardware",
+      "payment_method": "Mastercard 8899"
+    }
+  },
+  {
+    "case_description": "4. Ride-share receipt with toll surcharges and airport fees",
+    "receipt": {
+      "vendor_name": "SwiftRide Mobility Inc.",
+      "transaction_date": "2026-08-19",
+      "currency": "USD",
+      "subtotal_net": 42.00,
+      "line_items": [
+        {
+          "description": "Airport Transfer Base Fare",
+          "quantity": 1.0,
+          "unit_price": 32.50,
+          "total_price": 32.50
+        },
+        {
+          "description": "Express Highway Toll Surcharge",
+          "quantity": 1.0,
+          "unit_price": 5.50,
+          "total_price": 5.50
+        },
+        {
+          "description": "Commercial Airport Access Fee",
+          "quantity": 1.0,
+          "unit_price": 4.00,
+          "total_price": 4.00
+        }
+      ],
+      "tax_breakdown": [
+        {
+          "tax_name": "Municipal Transport Surcharge 5%",
+          "tax_rate_percent": 5.0,
+          "tax_amount": 2.10
+        }
+      ],
+      "total_tax_amount": 2.10,
+      "total_gross_amount": 44.10,
+      "category": "Travel & Transportation",
+      "payment_method": "Apple Pay (Amex 1004)"
+    }
+  },
+  {
+    "case_description": "5. Handwritten petty-cash receipt with minimal information",
+    "receipt": {
+      "vendor_name": "Local Corner Repair & Hardware",
+      "transaction_date": "2026-08-15",
+      "currency": "USD",
+      "subtotal_net": 15.00,
+      "line_items": [
+        {
+          "description": "Handwritten Repair Supplies & Screws",
+          "quantity": 1.0,
+          "unit_price": 15.00,
+          "total_price": 15.00
+        }
+      ],
+      "tax_breakdown": [
+        {
+          "tax_name": "Sales Tax (Unspecified)",
+          "tax_rate_percent": null,
+          "tax_amount": 0.00
+        }
+      ],
+      "total_tax_amount": 0.00,
+      "total_gross_amount": 15.00,
+      "category": "Uncategorized",
+      "payment_method": "Cash"
+    }
+  }
+]

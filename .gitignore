@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+api.env
+.env
+.vercel/
+.streamlit/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+scratch/
